@@ -1,0 +1,327 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Roboto;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+header {
+    color: white;
+    justify-content: center; 
+    text-align: center; 
+}
+
+p {
+    font-size: 24px;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    padding: 15px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px
+}
+
+.nav-links li {
+    display: inline;
+}
+ .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+ }
+
+ 
+ nav ul:hover {
+    color:  #007BFF;
+    
+}
+
+ nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+ nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 18px;
+}
+    
+
+a {
+  color: #1e90ff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  font-weight: 2px;
+  border: 2px solid black;
+  background-color: red;
+  border-radius: 6px;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #0056b3;
+    color: white;
+ }
+
+/* Active Link Styling */
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+ 
+ button {
+  background-color:  #007BFF;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: 2px solid black;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+ }
+  
+ button:hover {
+    background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+
+ footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+ }
+
+/* Custom styles to enhance Bootstrap design */
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Custom hero section styling */
+.hero-section {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Card hover effects */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Custom button styles */
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Social media icons hover effect */
+.social-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+    color: #007bff !important;
+}
+
+/* Feature icons styling */
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+}
+
+/* Custom spacing utilities */
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1.1rem;
+    }
+}
+
+/* Custom animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Custom badge styling */
+.badge {
+    font-weight: 500;
+    padding: 0.5em 0.75em;
+}
+
+/* Footer styling */
+footer {
+    margin-top: auto;
+}
+
+/* Custom link styling */
+.text-decoration-none:hover {
+    text-decoration: underline !important;
+}
+
+/* Image styling */
+.img-fluid {
+    border-radius: 8px;
+}
+
+/* Custom background patterns */
+.bg-pattern {
+    background-image: 
+        radial-gradient(circle at 25% 25%, rgba(0, 123, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 75% 75%, rgba(0, 123, 255, 0.1) 0%, transparent 50%);
+}
+
+/* Loading animation for buttons */
+.btn-loading {
+    position: relative;
+    pointer-events: none;
+}
+
+.btn-loading::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 50%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    border: 2px solid transparent;
+    border-top-color: currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #007bff;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #0056b3;
+}
+
+/* Focus styles for accessibility */
+.btn:focus,
+.nav-link:focus,
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Custom tooltip styling */
+.tooltip {
+    font-size: 0.875rem;
+}
+
+/* Print styles */
+@media print {
+    .navbar,
+    .btn,
+    footer {
+        display: none !important;
+    }
+    
+    .card {
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+    }
+}
